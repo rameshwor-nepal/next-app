@@ -6,6 +6,7 @@ import NavLink from "./navLink";
 import { motion } from "framer-motion";
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { FaInstagramSquare } from "react-icons/fa";
+import Image from "next/image";
 
 const links = [
   { url: "/", title: "Home" },
@@ -81,16 +82,13 @@ const Navbar = () => {
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+          className=" flex items-center justify-center"
         >
-          <span className="text-white mr-1">Lama</span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
-            .dev
-          </span>
+          <Image src={'/r_logo.png'} alt="logo" width={100} height={100} objectFit="contain"/>
         </Link>
       </div>
       {/* SOCIAL */}
-      <div className="hidden md:flex gap-4 w-1/3">
+      <div className="hidden md:flex gap-4 w-1/3 text-[#2a1c43]">
         <Link href="/">
           <IoLogoGithub />
         </Link>
