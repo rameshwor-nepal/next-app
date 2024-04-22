@@ -84,7 +84,7 @@ const Navbar = () => {
           href="/"
           className=" flex items-center justify-center"
         >
-          <Image src={'/r_logo.png'} alt="logo" width={100} height={100} objectFit="contain"/>
+          <Image src={'/r_logo.png'} alt="logo" width={100} height={100} className="object-contain"/>
         </Link>
       </div>
       {/* SOCIAL */}

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { ReactNode } from "react";
 
-interface PropI{
+interface PropI {
   children: ReactNode
 }
 
@@ -17,7 +17,7 @@ const TransitionProvider = ({ children }: PropI) => {
     <AnimatePresence mode="wait">
       <div
         key={pathName}
-        className="w-screen h-screen bg-gradient-to-b from-blue-100 to-red-100"
+        className=" bg-gradient-to-b from-blue-100 to-red-100"
       >
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
@@ -42,7 +42,7 @@ const TransitionProvider = ({ children }: PropI) => {
         <div className="h-24">
           <Navbar />
         </div>
-        <div className="h-[calc(100vh-6rem)]">{children}</div>
+        <div className="h-fit">{children}</div>
       </div>
     </AnimatePresence>
   );
