@@ -39,10 +39,11 @@ const TransitionProvider = ({ children }: PropI) => {
           initial={{ height: "140vh" }}
           animate={{ height: "0vh", transition: { delay: 0.5 } }}
         />
-        <div className="h-24">
+        <div className="h-24 ">
           <Navbar />
         </div>
-        <div className="h-fit">{children}</div>
+        <div className="h-fit min-h-[calc(100vh-96px)]">{children}</div>
+        <div className="h-24 text-center">Footer</div>
       </div>
     </AnimatePresence>
   );

@@ -14,7 +14,7 @@ interface PropsI {
 const Details = ({ position, company, companyLink, time, address, work }: PropsI) => {
     const ref = useRef(null);
     return (
-        <li className='my-6 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-center '>
+        <li ref={ref} className='my-6 first:mt-0 last:mb-0 w-[70%] h-full mx-auto flex flex-col items-center justify-center '>
             <LiIcon reference={ref} />
             <motion.div
                 initial={{ y: 50 }}

@@ -12,6 +12,7 @@ const links = [
   { url: "/", title: "Home" },
   { url: "/about", title: "About" },
   { url: "/portfolio", title: "Portfolio" },
+  { url: "/blogs", title: "Blog" },
   { url: "/contact", title: "Contact" },
 ];
 
@@ -84,7 +85,7 @@ const Navbar = () => {
           href="/"
           className=" flex items-center justify-center"
         >
-          <Image src={'/r_logo.png'} alt="logo" width={100} height={100} className="object-contain"/>
+          <Image src={'/r_logo.png'} alt="logo" width={100} height={100} className="object-contain" />
         </Link>
       </div>
       {/* SOCIAL */}
